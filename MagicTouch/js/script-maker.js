@@ -38,8 +38,8 @@ $(document).keypress(function(e){
             break;
         case 101://e
             son = new Audio("sounds/dotted-spiral.mp3");
-            animation.classList.add('heart');
-            animation.classList.add('tada');
+            animation.classList.add('line-2');
+            animation.classList.add('rotateIn');
             break;
         case 102://f
             son = new Audio("sounds/flash-1.mp3");
@@ -60,9 +60,18 @@ $(document).keypress(function(e){
             break;
         case 105://i
             son = new Audio("sounds/glimmer.mp3");
+            animation.classList.add('bg-orange');
+            animation.classList.add('bg');
+            bg = true;
             break;
         case 106://j
             son = new Audio("sounds/moon.mp3");
+            animation.classList.add('semi-circle-1');
+            animation.classList.add('slideInDown');
+
+            animation2.classList.add('exist');
+            animation2.classList.add('slideInUp');
+            animation2.classList.add('semi-circle-2');
             break;
         case 107://k
             son = new Audio("sounds/pinwheel.mp3");
@@ -80,6 +89,10 @@ $(document).keypress(function(e){
             break;
         case 109://m
             son = new Audio("sounds/piston-2.mp3");
+            animation.classList.add('bg-red');
+            animation.classList.add('bg');
+            animation.classList.add('flash');
+            bg = true;
             break;
         case 110://n
             son = new Audio("sounds/piston-3.mp3");
@@ -89,7 +102,7 @@ $(document).keypress(function(e){
         case 111://o
             son = new Audio("sounds/prism-1.mp3");
             animation.classList.add('triangle-3');
-            animation.classList.add('rollOut');
+            animation.classList.add('rotateOutUpLeft');
             break;
         case 112://p
             son = new Audio("sounds/prism-2.mp3");
@@ -128,10 +141,13 @@ $(document).keypress(function(e){
             break;
         case 117://u
             son = new Audio("sounds/suspension.mp3");
+            animation.classList.add('circle');
+            animation.classList.add('circle-6');
+            animation.classList.add('bounceInDown');
             break;
         case 118://v
             son = new Audio("sounds/timer.mp3");
-            animation.classList.add('rectangle');
+            animation.classList.add('triangle-4');
             animation.classList.add('rotateIn');
             break;
         case 119://w
