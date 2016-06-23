@@ -232,16 +232,15 @@ function spiral(){
 
 */
 
-/* PARTICULES QUI TOMBENT */
 
 
-
+/* function => Particules qui tombent */
 function canvas_falling(){
     var canvas_falling = document.createElement('CANVAS');
     document.querySelector('#display').appendChild(canvas_falling);
     canvas_falling.setAttribute("id", "canvas_falling");
     var ctx = canvas_falling.getContext('2d');
-//Canvas dimentions
+//Dimension du canvas
     var W = window.innerWidth,
         H = window.innerHeight;
     canvas_falling.width = W;
@@ -251,29 +250,29 @@ function canvas_falling(){
     var y = 100;
 
     for (var i = 0; i < 100; i++) {
-        //add particles with random postions
+        //ajout des particules avec positions aléatoires
         particles.push(new creat_particle());
     }
 
-//function for multiple particles
+//foction pour multiplier les particules
     function creat_particle() {
         this.x = Math.random() * W;
         this.y = Math.random() * H;
 
-        //velocity of balls
+        //Velocity
         this.vx = Math.random() * 20 - 1;
         this.vy = Math.random() * 20 + 1;
 
-        //Random Color
+        //Couleurs aléatoires
         var r = Math.random() * 255 >> 0;
         var g = Math.random() * 255 >> 0;
         var b = Math.random() * 255 >> 0;
         this.color = "rgba(" + r + "," + g + "," + b + ",0.5)";
 
-        //random size
+        //Taille aléatoires
         this.radius = Math.random() * 6 + 5;
     }
-//Particles Animation
+//Animation des particules
     function draw() {
         ctx.clearRect(0, 0, canvas_falling.width, canvas_falling.height);
 
@@ -284,7 +283,7 @@ function canvas_falling(){
             var p = particles[t];
 
             ctx.beginPath();
-            //balls color
+            //couleurs des boules
             var gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius);
             gradient.addColorStop(1, p.color);
             gradient.addColorStop(1, "rgb(66, 66, 66)");
