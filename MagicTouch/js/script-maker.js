@@ -305,7 +305,3 @@ function canvas_falling(){
     }
     setInterval(draw, 33);
 }
-
-
-
-
