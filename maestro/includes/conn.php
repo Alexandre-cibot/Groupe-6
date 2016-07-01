@@ -1,7 +1,7 @@
 <?php
 
 try{
-    $conn = new PDO('mysql:host=;dbname=alexandrarbdd;charset=UTF8','', '');
+    $conn = new PDO('mysql:host=;dbname=;charset=UTF8','', '');
 
 }
 catch(PDOException $e) {
