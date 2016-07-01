@@ -1,0 +1,16 @@
+{
+  "name": "alexandre/tracker",
+  "description": "Partie admin du site. Creation de stats relative a ce site web",
+  "authors": [
+    {
+      "name": "Alexandre Cibot",
+      "email": "alexandre.cibot@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Controller\\": "Controller",
+      "Model\\": "Model"
+    }
+  }
+}

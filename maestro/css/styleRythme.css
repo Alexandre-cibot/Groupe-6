@@ -1,0 +1,34 @@
+.color1{
+	background: url(../img/icone2.png) no-repeat center;
+}
+.color2{
+	background: url(../img/icone4.png) no-repeat center;
+}
+.color3{
+	background: url(../img/icone5.png) no-repeat center;
+}
+.DisplayNone{
+	display: none;
+}
+html, body { margin:0; padding:0; overflow:hidden }
+svg {
+	/*position:fixed; */
+	top:0; left:0; height:90%; width:100%
+}
+.circle {
+	fill: white;
+	stroke: black;
+}
+image {
+	opacity: 0;
+	transition: .5s;
+}
+.etoiles{
+	opacity: 1;
+}
+#playMelodyMaker{
+	position:relative; bottom:155px; left:47%;
+	background-color: transparent;
+	border: none;
+}
+
