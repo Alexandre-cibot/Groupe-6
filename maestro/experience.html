@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleVibration.css">
+    <link rel="stylesheet" href="css/styleRythme.css">
+
+    <script src="js/Tone.min.js"></script>
+    <script src="js/sons.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+			});
+		});
+	</script>
+</head>
+<body>
+    <div id="fullpage">
+    	<div class="section" id="section1">
+            
+            <!-- Explication Son -->
+            <div class="slide" id="section0">
+                <a href="public-home.php"><img src="./img/MAESTRO%20.png" alt="logo petit" class="maestrologo"><a/>
+                <img src="./img/help-button.png" alt="help" id="help">
+                <img src="./img/big-blue.png" alt="deco" id="bigblue">
+                <img src="img/demi-planet.png" alt="deco" id="demi-planet">
+                <div class="sound">
+                    <h1>Le Son</h1>
+                    <p>Qu'est-ce que le son ?</p>
+
+                    <p class="special-text">Touches les éléments de la page suivante et écoutes le son </p>
+
+                    <div class="directional-arrow">
+                        <p>utilise les fleches de ton clavier pour naviguer</p>
+                        <img src="img/directional-arrow.png">
+                    </div>
+                </div>
+                <img src="./img/planet-trou.png" alt="deco" id="planettrou">
+            </div>
+            
+            <!-- Animation Son -->
+    	    <div class="slide" id="section2">
+                <a href="public-home.php"><img class="logo-maestro" src="img/MAESTRO .png"></a>
+                <a href="#section0"><img class="help" src="img/help-button.png"></a>
+                <div class="planet">
+                    <img class="yellow" src="img/Planetejaune%20.png">
+                    <img class="orange" src="img/Planeteorange.png">
+                    <img class="pink" src="img/Planeterose.png">
+                    <img class="red" src="img/planeterouge.png">
+                    <img class="green" src="img/Planetevert%20eau.png">
+                    <img class="space-cat" src="img/Satellite%20et%20chat.png">
+                    <img class="navette" src="img/Navette.png">
+                    <img class="meteor" src="img/Meteorites.png">
+                    <img class="planet-right" src="img/Planete%20side%20right.png">
+                   <!-- <img class="bonhomme" src="img/bonhomme.png">-->
+                </div>
+            </div>
+
+            <!-- Explication Vibration -->
+            <div class="slide" id="section3">
+                <a href="public-home.php"><img class="logo-maestro" src="img/MAESTRO .png"></a>
+                <img src="./img/planettop.png" alt="deco" class="topplanet">
+                <img class="help" src="img/help-button.png">
+                <div class="cadre">
+                    <h1>la vibration</h1>
+                    <p>Qu'est-ce que la vibration ?</p>
+                    <p>La vibration est le resultat du mouvement de l’air.<br/>
+                        Le saviez vous : En realite,<br/> il n'y a pas d'air dans l'espace et donc pas de son</p>
+                    <p class="special-text">Bouges ton curseur pour produire une vibration avec la fusée</p>
+                </div>
+                <img src="./img/planetcorner.png" alt="deco" class="cornerplanet">
+               <!-- <img class="atmosphere" src="img/Atmosphere.png">-->
+                <img src="./img/planetright.png" alt="deco" class="lastplanet">
+            </div>
+
+            <!-- Animation Vibration -->
+            <div class="slide" id="section4">
+                <a href="public-home.php"><img class="logo-maestro" src="img/MAESTRO .png"><a/>
+                <img class="help" src="img/help-button.png">
+                <div id='wrapper'>
+                    <div class='clearfix' id='banner'>
+                        <div class='wrap clearfix'>
+                            <h1></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Explication Rythme -->
+            <div class="slide" id="section5">
+                <a href="public-home.php"><img src="./img/MAESTRO%20.png" alt="deco" class="logo-maestro"><a/>
+                <img src="./img/halfplanet.png" alt="deco" id="halfplanet">
+                <img src="./img/help-button.png" alt="help" class="help">
+                <div class="cadre">
+                    <h1>le rythme</h1>
+                    <p>Qu'est-ce que le rythme ?</p>
+                    <p>Le rythme est la duree des notes les unes par rapport aux autres</p>
+                    <p class="special-text2">Cliques sur les points blancs de la page suivante pour faire une partition et appuies sur
+                        le bouton "play" pour écouter le son</p>
+                </div>
+                <img src="./img/cornerrythme.png" alt="deco" id="bigrythme">
+                <img src="./img/planet-right.png" alt="deco" id="rythmeright">
+            </div>
+
+            <!-- Animation Rythme -->
+            <div class="slide" id="section6">
+                <a href="public-home.php"><img class="logo-maestro" src="img/MAESTRO .png"><a/>
+                <img class="help" src="img/help-button.png">
+                <img class="planet-orange" src="img/planet-orange.png">
+                <img class="planet-rose" src="img/planete-rose.png">
+                <img class="planet-blue" src="img/Planete.png">
+
+                <div id="zoneRythme">
+                    <table>
+                        <button id="playRythme"><img class="play" src="img/lecture.png"></button>
+                        <tr data-row-num="11">
+                            <td data-col-num="0"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="1"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="2"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="3"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="4"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="5"><img class="puce" src="img/puce.png"></td>
+                        </tr>
+                        <tr data-row-num="10">
+                            <td data-col-num="0"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="1"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="2"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="3"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="4"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="5"><img class="puce" src="img/puce.png"></td>
+                        </tr>
+                        <tr data-row-num="9">
+                            <td data-col-num="0"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="1"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="2"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="3"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="4"><img class="puce" src="img/puce.png"></td>
+                            <td data-col-num="5"><img class="puce" src="img/puce.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Explication melodymaker-->
+            <div class="slide" id="section7">
+                <a href="public-home.php"><img src="./img/MAESTRO%20.png" alt="deco" class="logo-maestro"><a/>
+                <img src="./img/melodiehalf.png" alt="deco" id="halfmelodie">
+                <img src="./img/help-button.png" alt="help" class="help">
+
+                <div class="cadre">
+                    <h1>la melodie</h1>
+                    <p>qu'est-ce que la melodie ?</p>
+                    <p>La melodie est un ensemble de sons harmonieux,<br/> ordonnees et agreable à l'oreille.<br/>
+                        On qualifie de « melodieuse », une musique qui repond a ces criteres.</p>
+                    <p class="special-text2">Composes ta mélodie en cliquant sur les planètes de la page suivante puis appuies sur le bouton "play" pour écouter
+                        la musique produite</p>
+                </div>
+
+                <img src="./img/melodiecorner.png" alt="deco" id="bigmelodie">
+                <img src="./img/melodieright.png" alt="deco" id="melodieright">
+            </div>
+
+            <!-- animation melodymaker -->
+            <div class="slide" id="section8">
+                <a href="public-home.php"><img class="logo-maestro" src="img/MAESTRO .png"><a/>
+                <img class="help" src="img/help-button.png">
+                <svg id="Desktop-HD" width="150%" height="100%" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+                    <title>Desktop HD</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Desktop-HD">
+                            <g id="ronds" transform="translate(-425.000000, 154.000000)" stroke="#979797" fill="#100974" fill-opacity="0">
+                                <path d="M1147.5,2282.48246 C1781.24675,2282.48246 2295,1771.53136 2295,1141.24123 C2295,510.951103 1781.24675,2.27373675e-13 1147.5,2.27373675e-13 C964.623163,2.27373675e-13 791.738123,42.5466387 638.306386,118.230017 C260.031285,304.822036 0,692.830481 0,1141.24123 C0,1771.53136 513.75325,2282.48246 1147.5,2282.48246 Z" id="Oval-1"></path>
+                                <ellipse id="Oval-1" cx="1147.8" cy="1141.29228" rx="1009.8" ry="1004.29228"></ellipse>
+                                <ellipse id="Oval-1" cx="1148.1" cy="1141.34333" rx="872.1" ry="867.343335"></ellipse>
+                                <ellipse id="Oval-1" cx="1147.4" cy="1141.39439" rx="734.4" ry="730.394387"></ellipse>
+                                <ellipse id="Oval-1" cx="1147.7" cy="1141.44544" rx="596.7" ry="593.44544"></ellipse>
+                            </g>
+                            <g id="earth" transform="translate(244.000000, 591.000000)">
+                                <image id="col-1-1" x="0" y="117" width="236" height="201" xlink:href="planetes/earth.png"></image>
+                                <image id="col-1-2" x="135" y="39" width="236" height="201" xlink:href="planetes/earth.png"></image>
+                                <image id="col-1-3" x="282" y="0" width="236" height="201" xlink:href="planetes/earth.png"></image>
+                                <image id="col-1-4" x="430" y="0" width="236" height="201" xlink:href="planetes/earth.png"></image>
+                                <image id="col-1-5" x="574" y="30" width="236" height="201" xlink:href="planetes/earth.png"></image>
+                                <image id="col-1-6" x="705" y="98" width="236" height="201" xlink:href="planetes/earth.png"></image>
+
+                            </g>
+                            <g id="orange" transform="translate(255.000000, 567.000000)">
+                                <image id="col-2-1" x="0" y="132" width="160" height="142" xlink:href="planetes/orange.png"></image>
+                                <image id="col-2-1" x="0" y="132" width="160" height="142" xlink:href="planetes/orange.png"></image>
+                                <image id="col-2-2" x="145" y="54" width="160" height="142" xlink:href="planetes/orange.png"></image>
+                                <image id="col-2-3" x="308" y="0" width="160" height="142" xlink:href="planetes/orange.png"></image>
+                                <image id="col-2-4" x="471" y="0" width="160" height="142" xlink:href="planetes/orange.png"></image>
+                                <image id="col-2-5" x="626" y="37" width="160" height="142" xlink:href="planetes/orange.png"></image>
+                                <image id="col-2-6" x="774" y="119" width="160" height="142" xlink:href="planetes/orange.png"></image>
+                            </g>
+                            <g id="bleue" transform="translate(224.000000, 501.000000)">
+                                <image id="col-3-1" x="0" y="150" width="145" height="139" xlink:href="planetes/bleue.png"></image>
+                                <image id="col-3-1" x="0" y="150" width="145" height="139" xlink:href="planetes/bleue.png"></image>
+                                <image id="col-3-2" x="153" y="59" width="145" height="139" xlink:href="planetes/bleue.png"></image>
+                                <image id="col-3-3" x="336" y="5" width="145" height="139" xlink:href="planetes/bleue.png"></image>
+                                <image id="col-3-4" x="514" y="0" width="145" height="139" xlink:href="planetes/bleue.png"></image>
+                                <image id="col-3-5" x="684" y="40" width="145" height="139" xlink:href="planetes/bleue.png"></image>
+                                <image id="col-3-6" x="848" y="129" width="145" height="139" xlink:href="planetes/bleue.png"></image>
+                            </g>
+                            <g id="jaune" transform="translate(167.000000, 427.000000)">
+                                <image id="col-4-1" x="0" y="154" width="178" height="145" xlink:href="planetes/jaune.png"></image>
+                                <image id="col-4-1" x="0" y="154" width="178" height="145" xlink:href="planetes/jaune.png"></image>
+                                <image id="col-4-2" x="166" y="54" width="178" height="145" xlink:href="planetes/jaune.png"></image>
+                                <image id="col-4-3" x="365" y="5" width="178" height="145" xlink:href="planetes/jaune.png"></image>
+                                <image id="col-4-4" x="559" y="0" width="178" height="145" xlink:href="planetes/jaune.png"></image>
+                                <image id="col-4-5" x="747" y="49" width="178" height="145" xlink:href="planetes/jaune.png"></image>
+                                <image id="col-4-6" x="921" y="141" width="178" height="145" xlink:href="planetes/jaune.png"></image>
+                            </g>
+                            <g id="rose" transform="translate(138.000000, 352.000000)">
+                                <image id="col-5-1" x="0" y="160" width="159" height="159" xlink:href="planetes/rose.png"></image>
+                                <image id="col-5-1" x="0" y="160" width="159" height="159" xlink:href="planetes/rose.png"></image>
+                                <image id="col-5-2" x="180" y="62" width="159" height="159" xlink:href="planetes/rose.png"></image>
+                                <image id="col-5-3" x="398" y="0" width="159" height="159" xlink:href="planetes/rose.png"></image>
+                                <image id="col-5-4" x="613" y="1" width="159" height="159" xlink:href="planetes/rose.png"></image>
+                                <image id="col-5-5" x="811" y="49" width="159" height="159" xlink:href="planetes/rose.png"></image>
+                                <image id="col-5-6" x="992" y="152" width="159" height="159" xlink:href="planetes/rose.png"></image>
+                            </g>
+                            <g id="verte" transform="translate(101.000000, 290.000000)">
+                                <image id="col-6-1" x="0" y="174" width="154" height="154" xlink:href="planetes/verte.png"></image>
+                                <image id="col-6-1" x="0" y="174" width="154" height="154" xlink:href="planetes/verte.png"></image>
+                                <image id="col-6-2" x="191" y="68" width="154" height="154" xlink:href="planetes/verte.png"></image>
+                                <image id="col-6-3" x="427" y="0" width="154" height="154" xlink:href="planetes/verte.png"></image>
+                                <image id="col-6-4" x="655" y="3" width="154" height="154" xlink:href="planetes/verte.png"></image>
+                                <image id="col-6-5" x="872" y="53" width="154" height="154" xlink:href="planetes/verte.png"></image>
+                                <image id="col-6-6" x="1074" y="153" width="154" height="154" xlink:href="planetes/verte.png"></image>
+                            </g>
+                            <g id="anneaux-orange" transform="translate(56.000000, 232.000000)">
+                                <image id="col-7-1" x="0" y="183" width="163" height="134" xlink:href="planetes/anneaux.png"></image>
+                                <image id="col-7-1" x="0" y="183" width="163" height="134" xlink:href="planetes/anneaux.png"></image>
+                                <image id="col-7-2" x="212" y="68" width="163" height="134" xlink:href="planetes/anneaux.png"></image>
+                                <image id="col-7-3" x="463" y="0" width="163" height="134" xlink:href="planetes/anneaux.png"></image>
+                                <image id="col-7-4" x="705" y="2" width="163" height="134" xlink:href="planetes/anneaux.png"></image>
+                                <image id="col-7-5" x="939" y="60" width="163" height="134" xlink:href="planetes/anneaux.png"></image>
+                                <image id="col-7-6" x="1152" y="169" width="163" height="134" xlink:href="planetes/anneaux.png"></image>
+                            </g>
+                            <g id="vague" transform="translate(18.000000, 151.000000)">
+                                <image id="col-8-1" x="0" y="185" width="172" height="159" xlink:href="planetes/vague.png"></image>
+                                <image id="col-8-2" x="224" y="68" width="172" height="159" xlink:href="planetes/vague.png"></image>
+                                <image id="col-8-3" x="490" y="0" width="172" height="159" xlink:href="planetes/vague.png"></image>
+                                <image id="col-8-4" x="746" y="2" width="172" height="159" xlink:href="planetes/vague.png"></image>
+                                <image id="col-8-5" x="996" y="60" width="172" height="159" xlink:href="planetes/vague.png"></image>
+                                <image id="col-8-6" x="1225" y="175" width="172" height="159" xlink:href="planetes/vague.png"></image>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <button id="playMelodyMaker"><img class="play" src="img/lecture.png"></button>
+            </div>
+            
+            <!-- Explication MagicTouch -->
+            <div class="slide" id="section9">
+                <a href="public-home.php"><img src="./img/MAESTRO%20.png" alt="deco" class="logo-maestro"><a/>
+                <img src="./img/halftouch.png" alt="deco" id="halftouch">
+                <img src="./img/help-button.png" alt="help" class="help">
+                <div class="cadre">
+                    <h1>magic touch</h1>
+                    <p>le maestro c'est toi!</p>
+                    <p class="special-text2">Sur la page suivante, amuses toi à taper sur les touches de ton clavier ou sur ton écran!</p>
+                </div>
+
+                <img src="./img/bigtouch.png" alt="deco" id="bigtouch">
+                <img src="./img/touchright.png" alt="deco" id="touchright">
+                <a href="magic-touch.html"><img class="button-magictouch" src="img/Button-magictouch.png"></a>
+            </div>
+        </div>
+        
+        <!-- barre de navigation -->
+        <nav id="main" class="navbar-fixed-bottom">
+            <div class="container">
+                <strong class="menu"><a href="index.html">ACCUEIL</a></strong>
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="position-page"><div class="chiffre-position">1</div></div>
+                        </li>
+                        <li>
+                            <a class="page-scroll link1" id="link1" data-menuanchor="#section0" href="#section0"><img class="group5" src="img/Group5.png"></a>
+                            <img class="line line-pink" src="img/line-pink.png">
+                        </li>
+                        <li>
+                            <a class="page-scroll link2" id="link2" data-menuanchor="#section3" href="#section3"><img class="group" src="img/icone2.png"></a>
+                            <img class="line line-purple" src="img/line-purple.png">
+                        </li>
+                        <li>
+                            <a class="page-scroll link3" id="link3" data-menuanchor="#section5" href="#section5"><img class="group" src="img/Group.png"></a>
+                            <img class="line line-pink1" src="img/line-pink.png">
+                        </li>
+                        <li>
+                            <a class="page-scroll link4" id="link4" data-menuanchor="#section7" href="#section7"><img class="group2" src="img/Group2.png"></a>
+                            <img class="line line-orange" src="img/line-orange.png">
+                        </li>
+                        <li>
+                            <a class="page-scroll link5" data-menuanchor="#section9" href="#section9"><img class="group4" src="img/Group4.png"></a>
+                        </li>
+                    </ul>
+                </div>
+                <strong class="about"><a href="apropos.html">A PROPOS</a></strong>
+            </div>
+        </nav>
+
+        <footer>
+            <p><a href="#">Mentions Legales</a></p>
+            <p><a href="#">Credits</a></p>
+        </footer>
+    </div>
+
+    <script src="js/scriptVibration.js"></script>
+    <script>
+            var osc = null;
+            window.onhashchange = function() {
+                if (location.hash == "#section3") {
+                    wrapper = document.getElementById("wrapper");
+                    osc = new Tone.Oscillator(220, "sine").toMaster().start();
+                    wrapper.onmousemove = function (e) {
+                        osc.frequency.value = e.clientY;
+                    }
+                } else if(osc) {
+                    osc.toMaster().stop();
+                }
+            }
+        </script>
+    <script src="js/scriptRythme.js"></script>
+    <script src="js/maestro.js"></script>
+    <script src="js/scriptMelodymaker.js"></script>
+</body>
+</html>
